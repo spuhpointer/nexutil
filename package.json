@@ -1,0 +1,52 @@
+{
+  "name": "nexutil",
+  "description": "Enduro/X utility bindings for Nodejs",
+  "keywords": [
+    "nexutil",
+    "password",
+    "auth",
+    "authentication",
+    "encryption",
+    "crypt",
+    "crypto"
+  ],
+  "main": "./nexutil",
+  "version": "1.0.0",
+  "author": "MV (https://github.com/spuhpointer/nexutil)",
+  "engines": {
+    "node": ">= 10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spuhpointer/nexutil.git"
+  },
+  "license": "LGPL v2",
+  "bugs": {
+    "url": "https://github.com/spuhpointer/nexutil/issues"
+  },
+  "scripts": {
+    "test": "npm install --build-from-source && nodeunit test",
+    "install": "node-pre-gyp install --fallback-to-build"
+  },
+  "dependencies": {
+    "node-pre-gyp": "0.15.0",
+    "node-addon-api": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodeunit": "^0.11.3"
+  },
+  "contributors": [
+    "MV <pointer@inbox.lv> (https://github.com/spuhpointer/nexutil)",
+    "VD"
+  ],
+  "binary": {
+    "module_name": "nexutil_lib",
+    "module_path": "./lib/binding/napi-v{napi_build_version}",
+    "package_name": "{module_name}-v{version}-napi-v{napi_build_version}-{platform}-{arch}-{libc}.tar.gz",
+    "host": "https://github.com",
+    "remote_path": "spuhpointer/nexutil/releases/download/v{version}",
+    "napi_versions": [
+      1
+    ]
+  }
+}
