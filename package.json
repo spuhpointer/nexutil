@@ -11,7 +11,7 @@
     "crypto"
   ],
   "main": "./nexutil",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "MV (https://github.com/spuhpointer/nexutil)",
   "engines": {
     "node": ">= 10.0.0"

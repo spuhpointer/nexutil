@@ -99,7 +99,7 @@ napi_value nexutil_tpdecryptstr(napi_env env, napi_callback_info info)
 		goto out;
 	}
 	
-	NAPI_CALL(env, napi_create_string_utf8(env, buf, len, &ret));
+	NAPI_CALL(env, napi_create_string_utf8(env, buf, NAPI_AUTO_LENGTH, &ret));
 	
 out:
 
